@@ -27,7 +27,7 @@ public class Ex4 {
      * @param n количество элементов в созданном списке
      * @return новый список
      */
-    private static LinkedList<Integer> createList(int n) {
+    public static LinkedList<Integer> createList(int n) {
         LinkedList<Integer> linkedList = new LinkedList<>();
         Random random = new Random();
         for (int i = 0; i < n; i++) {
