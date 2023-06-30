@@ -4,7 +4,7 @@ import java.util.*;
 
 import static javax.management.Query.match;
 import static org.example.lesson4.ClassWork.Ex4.createList;
-
+//Вывести список на экран в перевернутом виде (без массивов и ArrayList)
 public class task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

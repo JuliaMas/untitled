@@ -1,5 +1,6 @@
 package org.example.lesson4.HomeWork;
-
+//Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
+// determine if the input string is valid.
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Scanner;
@@ -23,5 +24,3 @@ public class task2 {
         return (l == '(' && r == ')') || (l == '{' && r == '}') || (l == '[' && r == ']');
     }
 }
-//Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
-// determine if the input string is valid.
