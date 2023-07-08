@@ -4,10 +4,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Basket extends Store {
-    public Basket(List<Product> product){
+    public Basket(List<Product> product) {
         super.setCatalog(product);
     }
-    public Basket(){
+
+    public Basket() {
         super.setCatalog(new LinkedList<>());
     }
 
@@ -16,3 +17,4 @@ public class Basket extends Store {
         return "Basket{}";
     }
 }
+

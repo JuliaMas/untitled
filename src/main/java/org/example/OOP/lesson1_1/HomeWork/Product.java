@@ -3,9 +3,9 @@ package org.example.OOP.lesson1_1.HomeWork;
 public class Product {
     private String name;
     private Integer price;
-    private boolean rating;
+    private double rating;
 
-    public Product(String name, Integer price, boolean rating) {
+    public Product(String name, Integer price, double rating) {
         this.name = name;
         this.price = price;
         this.rating = rating;
@@ -27,11 +27,11 @@ public class Product {
         this.price = price;
     }
 
-    public boolean isRating() {
+    public double isRating() {
         return rating;
     }
 
-    public void setRating(boolean rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 
@@ -43,4 +43,5 @@ public class Product {
                 ", rating=" + rating +
                 '}';
     }
+
 }

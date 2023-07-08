@@ -2,6 +2,7 @@ package org.example.OOP.lesson1_1.HomeWork;
 
 import java.util.List;
 
+
 public class User {
     private String name;
     private String password;
@@ -33,7 +34,7 @@ public class User {
         return basket.getCatalog();
     }
 
-    public void buy(Product product, Store store){
+    public void buy(Product product, Store store) {
         basket.addProduct(product);
         store.deleteProduct(product);
     }

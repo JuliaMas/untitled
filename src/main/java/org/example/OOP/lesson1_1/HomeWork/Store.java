@@ -11,26 +11,33 @@ public class Store {
         this.name = name;
         this.catalog = catalog;
     }
-    public Store(String name){
+
+    public Store(String name) {
         this.name = name;
         this.catalog = new LinkedList<>();
     }
-    public Store(){
+
+    public Store() {
 
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public List<Product> getCatalog(){
+
+    public List<Product> getCatalog() {
         return catalog;
     }
-    public void setCatalog(List<Product> catalog){
+
+    public void setCatalog(List<Product> catalog) {
         this.catalog = catalog;
     }
-    public void addProduct(Product product){
+
+    public void addProduct(Product product) {
         this.catalog.add(product);
     }
-    public void deleteProduct(Product product){
+
+    public void deleteProduct(Product product) {
         this.catalog.remove(product);
     }
 
