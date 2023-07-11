@@ -6,7 +6,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Obstructions> let = new ArrayList<>();
-        let.add(new Racetrack("Race 1", 40));
+        let.add(new Racetrack("Race 4", 40));
         let.add(new Wall("Wall 1", 1));
         let.add(new Wall("Wall 2", 2));
         let.add(new Racetrack("Race 2", 20));

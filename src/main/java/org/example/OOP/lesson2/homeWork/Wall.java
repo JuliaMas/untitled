@@ -1,6 +1,6 @@
 package org.example.OOP.lesson2.homeWork;
 
-public class Wall extends Obstructions{
+public class Wall extends Obstructions {
     public int height;
 
     public Wall(String name, int height) {

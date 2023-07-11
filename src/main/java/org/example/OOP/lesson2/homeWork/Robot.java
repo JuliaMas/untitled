@@ -1,23 +1,25 @@
 package org.example.OOP.lesson2.homeWork;
 
-public class Robot implements Action{
+public class Robot implements Action {
     static int distance;
     static int height;
     static int flag;
     static String name;
-    public Robot (String name) {
+
+    public Robot(String name) {
         this.name = name;
         distance = 120;
         height = 13;
         flag = 0;
     }
+
     @Override
     public void run(Racetrack racetrack) {
         if (distance > racetrack.distance) {
             System.out.println(getName() + " Пробежал");
         } else {
             flag++;
-            System.out.println(getName()+ " не добежал!");
+            System.out.println(getName() + " не добежал!");
         }
     }
 

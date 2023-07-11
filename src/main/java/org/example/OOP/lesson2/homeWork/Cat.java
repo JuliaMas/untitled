@@ -16,7 +16,7 @@ public class Cat implements Action {
     @Override
     public void run(Racetrack racetrack) {
         if (distance > racetrack.distance) {
-            System.out.println(getName()+ " Пробежал");
+            System.out.println(getName() + " Пробежал");
         } else {
             flag++;
             System.out.println(getName() + " не добежал!");

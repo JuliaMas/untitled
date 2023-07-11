@@ -1,6 +1,6 @@
 package org.example.OOP.lesson2.homeWork;
 
-public class Human implements Action{
+public class Human implements Action {
     static int distance;
     static int height;
     static int flag;
@@ -15,9 +15,9 @@ public class Human implements Action{
 
     @Override
     public void run(Racetrack racetrack) {
-        if(distance> racetrack.distance){
+        if (distance > racetrack.distance) {
             System.out.println(getName() + " Пробежал");
-        }else {
+        } else {
             flag++;
             System.out.println(getName() + " не добежал!");
         }
@@ -25,19 +25,21 @@ public class Human implements Action{
 
     @Override
     public void jump(Wall wall) {
-        if (height > wall.height){
+        if (height > wall.height) {
             System.out.println(getName() + " перепрыгнул!");
-        }else {
+        } else {
             flag++;
             System.out.println(getName() + " не перепрыгнул!");
         }
     }
+
     @Override
-    public int getFlag(){
+    public int getFlag() {
         return flag;
     }
+
     @Override
-    public String getName(){
+    public String getName() {
         return name;
     }
 }
