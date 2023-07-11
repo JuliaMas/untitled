@@ -1,12 +1,11 @@
-package org.example.OOP.lesson2.Tast1;
+package org.example.OOP.lesson2.tast1;
 
-public class Cat extends Animal {
+public class Dog extends Animal {
     static int count;
     int runDistunce;
+    int swimDistunce;
 
-
-
-    public Cat(String name, int runDistunce) {
+    public Dog(String name, int runDistunce, int swimDistunce) {
         super(name);
         if (runDistunce > 500) {
             this.runDistunce = 500;
@@ -14,9 +13,14 @@ public class Cat extends Animal {
         } else {
             this.runDistunce = runDistunce;
         }
-
+        if (swimDistunce > 10) {
+            this.swimDistunce = 10;
+            System.out.println("введенное значение больше максимального");
+        } else {
+            this.swimDistunce = swimDistunce;
+        }
         this.runDistunce = runDistunce;
-
+        this.swimDistunce = swimDistunce;
         count++;
     }
 
@@ -27,11 +31,16 @@ public class Cat extends Animal {
         } else {
             System.out.println(super.name + "пробежал");
         }
+
     }
 
     @Override
     public void swim(int distance) {
-        System.out.println(super.name+ "не умеет плавать");
+        if (distance > swimDistunce) {
+            System.out.println(super.name + "не проплыл");
+        } else {
+            System.out.println(super.name + "проплыл");
+        }
 
     }
 }

@@ -1,4 +1,4 @@
-package org.example.OOP.lesson2.Tast1;
+package org.example.OOP.lesson2.tast1;
 
 public class Main {
     public static void main(String[] args) {
