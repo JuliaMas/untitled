@@ -1,6 +1,7 @@
 package org.example.OOP.lesson3.Task3;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class RuGame extends AbstractGame {
@@ -12,5 +13,11 @@ public class RuGame extends AbstractGame {
             stringList.add(Character.toString(i));
         }
         return stringList;
+    }
+
+    @Override
+    public String getNameGame() {
+        List<String> tmp = Arrays.asList(getClass().getName().split("\\."));
+        return tmp.get(tmp.size() - 1);
     }
 }

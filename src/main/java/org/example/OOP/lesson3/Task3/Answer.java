@@ -8,12 +8,21 @@ public class Answer {
         this.bulls = bulls;
         this.cows = cows;
     }
-
-    public int getBulls() {
+public int getBulls(){
         return bulls;
+}
+public int getCows(){
+        return cows;
+}
+    public Answer() {
     }
 
-    public int getCows() {
-        return cows;
+    @Override
+    public String toString() {
+        return "Answer{" +
+                "bulls=" + bulls +
+                ", cows=" + cows +
+                '}';
     }
+
 }

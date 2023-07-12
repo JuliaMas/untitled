@@ -1,9 +1,10 @@
 package org.example.OOP.lesson3.Task3;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class NumderGame extends AbstractGame{
+public class NumberGame extends AbstractGame{
 
     @Override
     public List<String> generateCharList(){
@@ -12,6 +13,11 @@ public class NumderGame extends AbstractGame{
             stringList.add(Integer.toString(i));
         }
         return stringList;
+    }
+    @Override
+    public String getNameGame(){
+        List<String> tempt = Arrays.asList(getClass().getName().split("\\."));
+        return tempt.get(tempt.size() - 1);
     }
 
 
