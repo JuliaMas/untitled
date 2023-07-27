@@ -22,9 +22,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", number=" + number +
-                '}';
+        return "{name='" + name + '\'' +
+                ", number=" + number + "}";
     }
 }

@@ -9,6 +9,7 @@ public class PhoneBook implements ActionPhoneBook {
     private List<User> phoneBook;
 
     public PhoneBook() {
+
         this.phoneBook = new ArrayList<>();
     }
 
@@ -30,9 +31,6 @@ public class PhoneBook implements ActionPhoneBook {
             this.phoneBook.add(phoneBook.get(i));
         }
     }
-
-
-
     @Override
     public void exportPhoneBook(PhoneBook phoneBook) {
         for (int i = 0; i < this.phoneBook.size(); i++) {

@@ -72,20 +72,17 @@ public class View {
             }
         }
     }
-
-    private int menuFormat() {
+    private int menu() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Выберите действие: ");
-        System.out.println("1. Форматировать в PDF");
-        System.out.println("2. Форматировать в Json");
-        System.out.println("Выход");
-        int n = scanner.nextInt();
-        if (n >= 3 || n < 0) {
-            return 99;
+        System.out.println("Выбирите телефонную книгу(для выхода нажмите 99): ");
+        for (int i = 0; i < this.phoneBookList.size(); i++) {
+            System.out.println(i + " . Телефонная книга");
         }
-        return n;
+        int m1 = scanner.nextInt();
+        if (m1 >= this.phoneBookList.size() || m1 < 0)
+            return 99;
+        return m1;
     }
-
     private int menu2() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Выберите действие: ");
@@ -93,24 +90,22 @@ public class View {
         System.out.println("2. Экспортировать телефонную книгу: ");
         System.out.println("3. Форматировать телефонную книгу: ");
         System.out.println("4. Выход");
-        int n = scanner.nextInt();
-        if (n >= 4 || n < 0) {
+        int m2 = scanner.nextInt();
+        if (m2 >= 4 || m2 < 0) {
             return 99;
         }
-        return n;
+        return m2;
     }
-
-    private int menu() {
+    private int menuFormat() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Выбирите телефонную книгу(для выхода нажмите 99): ");
-        for (int i = 0; i < this.phoneBookList.size(); i++) {
-            System.out.println(i + "Телефонная книга");
-        }
-        int n1 = scanner.nextInt();
-        if (n1 >= this.phoneBookList.size() || n1 < 0) {
+        System.out.println("Выберите действие: ");
+        System.out.println("1. Форматировать в PDF");
+        System.out.println("2. Форматировать в Json");
+        System.out.println("3. Выход");
+        int m3 = scanner.nextInt();
+        if (m3 >= 3 || m3 < 0) {
             return 99;
         }
-        return n1;
+        return m3;
     }
-
 }

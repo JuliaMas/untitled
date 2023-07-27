@@ -12,7 +12,7 @@ public class Format implements Formater {
 
     @Override
     public PhoneBook formatJson(PhoneBook phoneBook) {
-        System.out.println("Формат JSON");
+        System.out.println("Формат JSON ");
         return phoneBook;
     }
 }
