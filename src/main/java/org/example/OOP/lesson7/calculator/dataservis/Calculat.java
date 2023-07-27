@@ -14,6 +14,8 @@ public class Calculat implements Action {
         }
     }
 
+
+
     @Override
     public Complex sum(Complex number, Complex number2) {
         return new Complex(number.a + number2.a, number.b + number2.b);

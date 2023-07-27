@@ -18,7 +18,7 @@ public class View {
         Scanner scanner = new Scanner(System.in);
         boolean flag = true;
         while (flag) {
-            System.out.println("Выберите вариант работы(1,2,3 или 4 для выхода: " +
+            System.out.println("Выберите вариант работы(1,2,3 или 4 для выхода): " +
                     "\n" + "1.Рациональные числа" +
                     "\n" + "2.Комплексные числа" + "\n"
                     + "3.Посмотреть логи");
@@ -42,7 +42,7 @@ public class View {
         boolean flag = true;
         while (flag) {
             boolean flag2 = true;
-            System.out.println("Введите первое число: ");
+            System.out.println("Введите первое число ");
             Complex number1 = createComplex();
             while (flag2) {
                 scanner.nextLine();
@@ -62,7 +62,7 @@ public class View {
                 }
             }
             if (!flag) break;
-            System.out.println("Введите второе число: ");
+            System.out.println("Введите второе число ");
             Complex number2 = createComplex();
             Calculat calculat = new Calculat();
             switch (act.charAt(0)) {

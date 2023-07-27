@@ -12,6 +12,7 @@ public class Rational extends Numbers {
 
     @Override
     public String toString() {
+
         return (int) num1 + "/" + (int) num2;
     }
 }

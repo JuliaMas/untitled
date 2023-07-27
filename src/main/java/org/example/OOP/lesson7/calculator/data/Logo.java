@@ -9,6 +9,7 @@ public class Logo implements Logging {
     private List<String> logo;
 
     public Logo() {
+
         this.logo = new ArrayList<>();
     }
 
@@ -21,6 +22,7 @@ public class Logo implements Logging {
 
     @Override
     public void saveLog(String str) {
+
         this.logo.add(str);
     }
 }

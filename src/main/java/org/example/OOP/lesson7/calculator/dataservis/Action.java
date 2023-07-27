@@ -19,4 +19,5 @@ public interface Action {
     Rational div(Rational number, Rational number2);
 
     Complex div(Complex number, Complex number2);
+
 }
